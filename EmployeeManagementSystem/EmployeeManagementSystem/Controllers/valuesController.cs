@@ -7,7 +7,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 
 namespace EmployeeManagementSystem.Controllers
@@ -16,9 +18,10 @@ namespace EmployeeManagementSystem.Controllers
     [ApiController]
     public class valuesController : ControllerBase
     {
+      
         // GET: api/values
-      [Authorize(Roles = "Administrator")]
-      //  [HttpGet("GetValues")]
+           [Authorize]
+        //  [HttpGet("GetValues")]
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };

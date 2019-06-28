@@ -79,7 +79,7 @@ namespace EmployeeManagementSystem
             app.UseStaticFiles();
             app.UseCookiePolicy();
 
-            app.UseAuthentication();
+           app.UseAuthentication();
 
             app.UseMvc(routes =>
             {
