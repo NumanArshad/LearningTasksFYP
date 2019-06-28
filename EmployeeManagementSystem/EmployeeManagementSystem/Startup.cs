@@ -16,6 +16,10 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 
+
+
+using EmployeeManagementSystem.Models;
+
 namespace EmployeeManagementSystem
 {
     public class Startup
@@ -52,11 +56,17 @@ namespace EmployeeManagementSystem
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+           
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDefaultIdentity<IdentityUser>()
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+            //services.AddDefaultIdentity<IdentityUser>()
+            //    .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            services.AddIdentity<ApplicationUser,IdentityRole>(
+               options => options.Stores.MaxLengthForKeys = 128
+               )
+               .AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultUI().AddDefaultTokenProviders();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
