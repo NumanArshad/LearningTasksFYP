@@ -1,0 +1,13 @@
+E:\ASP.NET Core\Github\WebAPIServiceProvider\WebAPIServiceProvider\bin\Debug\netcoreapp2.1\WebAPIServiceProvider.deps.json
+E:\ASP.NET Core\Github\WebAPIServiceProvider\WebAPIServiceProvider\bin\Debug\netcoreapp2.1\WebAPIServiceProvider.runtimeconfig.json
+E:\ASP.NET Core\Github\WebAPIServiceProvider\WebAPIServiceProvider\bin\Debug\netcoreapp2.1\WebAPIServiceProvider.runtimeconfig.dev.json
+E:\ASP.NET Core\Github\WebAPIServiceProvider\WebAPIServiceProvider\bin\Debug\netcoreapp2.1\WebAPIServiceProvider.dll
+E:\ASP.NET Core\Github\WebAPIServiceProvider\WebAPIServiceProvider\bin\Debug\netcoreapp2.1\WebAPIServiceProvider.pdb
+E:\ASP.NET Core\Github\WebAPIServiceProvider\WebAPIServiceProvider\obj\Debug\netcoreapp2.1\WebAPIServiceProvider.csproj.CoreCompileInputs.cache
+E:\ASP.NET Core\Github\WebAPIServiceProvider\WebAPIServiceProvider\obj\Debug\netcoreapp2.1\WebAPIServiceProvider.RazorAssemblyInfo.cache
+E:\ASP.NET Core\Github\WebAPIServiceProvider\WebAPIServiceProvider\obj\Debug\netcoreapp2.1\WebAPIServiceProvider.RazorAssemblyInfo.cs
+E:\ASP.NET Core\Github\WebAPIServiceProvider\WebAPIServiceProvider\obj\Debug\netcoreapp2.1\WebAPIServiceProvider.AssemblyInfoInputs.cache
+E:\ASP.NET Core\Github\WebAPIServiceProvider\WebAPIServiceProvider\obj\Debug\netcoreapp2.1\WebAPIServiceProvider.AssemblyInfo.cs
+E:\ASP.NET Core\Github\WebAPIServiceProvider\WebAPIServiceProvider\obj\Debug\netcoreapp2.1\WebAPIServiceProvider.RazorTargetAssemblyInfo.cache
+E:\ASP.NET Core\Github\WebAPIServiceProvider\WebAPIServiceProvider\obj\Debug\netcoreapp2.1\WebAPIServiceProvider.dll
+E:\ASP.NET Core\Github\WebAPIServiceProvider\WebAPIServiceProvider\obj\Debug\netcoreapp2.1\WebAPIServiceProvider.pdb
