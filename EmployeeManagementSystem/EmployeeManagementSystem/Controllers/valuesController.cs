@@ -1,9 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Security.Claims;
+using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
 
 namespace EmployeeManagementSystem.Controllers
 {
@@ -12,12 +17,14 @@ namespace EmployeeManagementSystem.Controllers
     public class valuesController : ControllerBase
     {
         // GET: api/values
+      [Authorize(Roles = "Administrator")]
       //  [HttpGet("GetValues")]
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
         }
 
+      
         // GET: api/values/5
         [HttpGet("{id}", Name = "Get")]
         public string Get(int id)
