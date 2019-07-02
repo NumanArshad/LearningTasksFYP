@@ -18,10 +18,10 @@ namespace EmployeeManagementSystem.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
-        private readonly UserManager<IdentityUser> _userManager;
+        private readonly UserManager<ApplicationUser> _userManager;
         private readonly IConfiguration _configuration;
 
-        public AuthController(UserManager<IdentityUser> userManager, IConfiguration configuration)
+        public AuthController(UserManager<ApplicationUser> userManager, IConfiguration configuration)
         {
             _userManager = userManager;
             _configuration = configuration;
@@ -37,16 +37,19 @@ namespace EmployeeManagementSystem.Controllers
                 var symmetricSecuritykey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(securityKey));
 
                 var signingCredentials = new SigningCredentials(symmetricSecuritykey, SecurityAlgorithms.HmacSha256Signature);
-             //   var claims = new List<Claim>();
-              //  claims.Add(new Claim(ClaimTypes.Role, "Administrator"));
-              //  claims.Add(new Claim("Our_Custom_Claim", "Our cutom calue"));
+                   var claims = new List<Claim>();
+                   claims.Add(new Claim(ClaimTypes.Role, "Administrator"));
+                 // claims.Add(new Claim("Our_Custom_Claim", "Our cutom calue"));
+
+                //var role = new IdentityRole("Customer");
+
                 var token = new JwtSecurityToken(
                     issuer: "smesk.in",
                     audience: "readers",
-                    //  notBefore:DateTime.UtcNow,
-                    expires: DateTime.UtcNow.AddSeconds(10),
-                    signingCredentials: signingCredentials
-               //     claims: claims
+                     // notBefore:DateTime.UtcNow,
+                    expires: DateTime.UtcNow.AddMinutes(1),
+                    signingCredentials: signingCredentials//,
+               //  claims: claims
                     );
                 return Ok(new
                 {
@@ -56,7 +59,7 @@ namespace EmployeeManagementSystem.Controllers
 
             }
         
-            return NotFound();
+            return Unauthorized();
         }
 
       //  [HttpGet("token")]

@@ -20,7 +20,7 @@ namespace EmployeeManagementSystem.Controllers
     {
       
         // GET: api/values
-           [Authorize]
+     
         //  [HttpGet("GetValues")]
         public IEnumerable<string> Get()
         {
