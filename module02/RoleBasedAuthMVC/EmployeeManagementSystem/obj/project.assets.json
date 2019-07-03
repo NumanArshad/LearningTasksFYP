@@ -12538,11 +12538,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\ASP.NET Core\\Github\\EmployeeManagementSystem\\EmployeeManagementSystem\\EmployeeManagementSystem.csproj",
+      "projectUniqueName": "E:\\ASP.NET Core\\Github\\module02\\RoleBasedAuthMVC\\EmployeeManagementSystem\\EmployeeManagementSystem.csproj",
       "projectName": "EmployeeManagementSystem",
-      "projectPath": "E:\\ASP.NET Core\\Github\\EmployeeManagementSystem\\EmployeeManagementSystem\\EmployeeManagementSystem.csproj",
+      "projectPath": "E:\\ASP.NET Core\\Github\\module02\\RoleBasedAuthMVC\\EmployeeManagementSystem\\EmployeeManagementSystem.csproj",
       "packagesPath": "C:\\Users\\Numan\\.nuget\\packages\\",
-      "outputPath": "E:\\ASP.NET Core\\Github\\EmployeeManagementSystem\\EmployeeManagementSystem\\obj\\",
+      "outputPath": "E:\\ASP.NET Core\\Github\\module02\\RoleBasedAuthMVC\\EmployeeManagementSystem\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

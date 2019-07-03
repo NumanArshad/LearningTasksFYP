@@ -131,7 +131,7 @@ namespace EmployeeManagementSystem.Areas.Identity.Pages.Account
                     await _signInManager.SignInAsync(user, isPersistent: false);
                      
 
-                         if(!await _roleManager.RoleExistsAsync("Admin"){
+                         if(!await _roleManager.RoleExistsAsync("Admin")){
                     		var role = new IdentityRole("Admin");
                     		await _roleManager.CreateAsync(role);
                     		await _userManager.AddToRoleAsync(user, "Admin");
