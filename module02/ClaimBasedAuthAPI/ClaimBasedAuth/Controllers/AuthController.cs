@@ -61,7 +61,7 @@ namespace ClaimBasedAuth.Controllers
               //      new Claim(JwtRegisteredClaimNames.Sub, user.UserName)
                // };
              var claim = new List<Claim>();
-                   claims.Add(new Claim(ClaimTypes.Role, "Administrator"));
+                   claim.Add(new Claim(ClaimTypes.Role, "Administrator"));
                 var signinKey = new SymmetricSecurityKey(
                   Encoding.UTF8.GetBytes(_configuration["Jwt:SigningKey"]));
 
